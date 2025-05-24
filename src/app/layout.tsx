@@ -8,11 +8,9 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-
-
 export const metadata: Metadata = {
-  title: "Setugame Waitlist",
-  description: "Generate Gaming Setup by using ai ",
+  title: "Anas_Portolio",
+  description: "A web devloper raised in morocco , 18yr passionate about building responsive fullstack website",
 };
 
 export default function RootLayout({
@@ -23,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body cz-shortcut-listen="true"
-        className={`${inter.className} bg-black text-white antialiased`}
+        className={`${inter.className} bg-background text-white antialiased`}
       >
         {children}
         <ToastContainer
