@@ -2,9 +2,7 @@
 
 
 @theme inline {
-  --color-background: #180115;
-  --color-accent: #ff6900;
-  --color-primary: #ff54ee;
-  --color-secondary: #a11809;
-  --color-accent: #f28d16;
+  --font-header: var(--font-noto-head);
+  --color-primary: #7ed0ff;
+  --color-accent: #d9acfd;
 }
