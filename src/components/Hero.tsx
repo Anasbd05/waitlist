@@ -41,10 +41,9 @@ const Hero = () => {
                     <button className='w-36 py-2 bg-accent font-medium rounded-lg mt-4 cursor-pointer hover:opacity-80'>Get Started</button>
                 </div>
                 <div className="hidden lg:flex flex-col items-center lg:w-2/4">
-                    <span className='text-black ring ring-purple-500 style py-1 rounded-full px-10'>✨ The AI ads generator</span>
+                    <span className='text-black ring ring-purple-500 bg-gradient-to-r from-purple-400 to-accent py-1 rounded-full px-10 bg-white'>✨The AI ads generator</span>
                     <Image src={heropic} width={800} height={800} alt='hero image' draggable={false} />
                 </div>
-
             </main>
         </section>
     )
