@@ -10,3 +10,9 @@
 .tag {
   @apply font-header font-bold tracking-tight bg-gradient-to-b from-black to-blue-700 bg-clip-text text-transparent
 }
+
+.style {
+  box-shadow: 0px 10px 197px -13px rgba(217, 172, 253, 0.98) inset;
+  -webkit-box-shadow: 0px 10px 197px -13px rgba(217, 172, 253, 0.98) inset;
+  -moz-box-shadow: 0px 10px 197px -13px rgba(217, 172, 253, 0.98) inset;
+}

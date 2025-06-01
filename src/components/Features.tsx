@@ -12,13 +12,13 @@ const Features = () => {
                         ad copy and visuals for any platform — no design or writing skills needed. Save time,
                         boost results, and grow your business with ease.
                     </p>
-                    <button className='bg-black font-medium rounded-full py-2.5 text-white w-36 '>Get started</button>
+                    <button className='bg-black font-medium cursor-pointer hover:opacity-80 rounded-xl py-2.5 text-white w-36 '>Get started</button>
                 </div>
                 <div className="lg:w-2/4 grid border grid-cols-2">
                     {features.map((feature,index) => (
                         <div key={index} className={` p-5 border flex flex-col items-center border-neutral-800 `}
                             style={{backgroundColor: feature.bg}} >
-                            <Image src={feature.icon} width={150} height={150} alt='' />
+                            <Image src={feature.icon} width={150} height={150} alt='feature images' />
                             <h1 className='mb-4 text-2xl font-header text-center font-semibold'>{feature.title}</h1>
                             <p className='text-center'>{feature.description}</p>
                         </div>
