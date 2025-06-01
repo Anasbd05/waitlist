@@ -14,7 +14,7 @@ const noto = Noto_Sans_Display({
 
 
 export const metadata: Metadata = {
-  title: "Ads_Fast",
+  title: "AdsFast",
   description: "A web app that helps dropshippers create high-converting Facebook ads — in seconds — using AI Instead of spending hours writing ad copy or hiring designers,users just fill in a simple form then they get the ad simple!",
 };
 

@@ -12,7 +12,7 @@ const Features = () => {
                         ad copy and visuals for any platform — no design or writing skills needed. Save time,
                         boost results, and grow your business with ease.
                     </p>
-                    <button className='bg-black rounded-full py-2.5 text-white w-36 '>Get started</button>
+                    <button className='bg-black font-medium rounded-full py-2.5 text-white w-36 '>Get started</button>
                 </div>
                 <div className="lg:w-2/4 grid border grid-cols-2">
                     {features.map((feature,index) => (

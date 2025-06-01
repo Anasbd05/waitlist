@@ -8,5 +8,5 @@
 }
 
 .tag {
-  @apply font-header font-bold bg-gradient-to-b from-black to-blue-700 bg-clip-text text-transparent
+  @apply font-header font-bold tracking-tight bg-gradient-to-b from-black to-blue-700 bg-clip-text text-transparent
 }

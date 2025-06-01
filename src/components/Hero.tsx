@@ -38,7 +38,7 @@ const Hero = () => {
                             </div>
                         ))}
                     </ul>
-                    <button className='w-36 py-2 bg-accent font-bold rounded-lg mt-4 '>Get Started</button>
+                    <button className='w-36 py-2 bg-accent font-medium rounded-lg mt-4 '>Get Started</button>
                 </div>
                 <div className="hidden lg:flex flex-col items-center lg:w-2/4">
                     <span className='text-black ring ring-accent bg-accent/70 py-1 rounded-full px-10'>✨ The AI ads generator</span>
