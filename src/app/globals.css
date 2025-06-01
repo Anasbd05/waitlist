@@ -6,3 +6,7 @@
   --color-primary: #7ed0ff;
   --color-accent: #d9acfd;
 }
+
+.tag {
+  @apply font-header font-bold bg-gradient-to-b from-black to-blue-700 bg-clip-text text-transparent
+}

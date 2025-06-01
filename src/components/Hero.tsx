@@ -23,9 +23,9 @@ const Hero = () => {
 
     return (
         <section className='py-10 md:py-12 lg:py-14'>
-            <main className='w-11/12 mx-auto flex  justify-center lg:justify-between items-center'>
+            <main className='lg:w-11/12 mx-auto flex  justify-center lg:justify-between items-center'>
                 <div className="flex flex-col lg:w-2/4">
-                    <h1 className='text-4xl md:text-5xl xl:text-6xl font-bold mb-2 py-2 font-header bg-gradient-to-b from-black to-blue-700 bg-clip-text text-transparent '>Fast, high-performing ads</h1>
+                    <h1 className='text-4xl md:text-5xl xl:text-6xl  mb-2 py-2 tag '>Fast, high-performing ads</h1>
                     <p className=' lg:leading-relaxed mt-5'>Generate high-converting ads for any social media platform in seconds with
                         AI-powered copy and visuals. Just enter your product or service — no writing
                         or design skills needed.
