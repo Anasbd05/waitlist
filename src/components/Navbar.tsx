@@ -5,7 +5,7 @@ import logo from '@/assets/logo.png'
 
 const Navbar = () => {
     return (
-        <section className='py-5 px-4 lg:px-14 flex w-full justify-between bg-white sticky top-0 shadow-gray-200'>
+        <section className='py-5 px-4 lg:px-14 flex w-full justify-between sticky top-0 backdrop-blur-sm shadow-gray-200'>
             <Link href={"/"} className='flex gap-0.5 items-center'>
                 <Image src={logo} alt='Ads fast logo' width={45} height={45} />
                 <h1 className='font-bold font-noto-head text-xl'>AdsFast</h1>

@@ -10,3 +10,7 @@
 .tag {
   @apply font-header font-bold tracking-tight bg-gradient-to-b from-black to-blue-700 bg-clip-text text-transparent
 }
+
+.card {
+  @apply p-10 border border-[#222222]/10 rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full
+}
