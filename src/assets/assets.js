@@ -34,62 +34,68 @@ export const reviews = [
   {
     name: "Liam M.",
     username: "@liam_maker",
-    socialMedia: <Twitter className="w-6 h-6 ml-auto mb-4 text-sky-500"/> ,
+    socialMedia: <Twitter className="w-6 h-6 ml-auto mb-4 text-sky-500" />,
     review: "This tool saved me hours! Super intuitive and fast.",
   },
   {
     name: "Sophia R.",
-    username: "sophia_designs",
-    socialMedia: <Linkedin className="w-6 h-6 ml-auto mb-4 text-blue-500"/> ,
-    review: "I love the clean UI and the results speak for themselves.",
+    username: "@sophia_designs",
+    socialMedia: <Linkedin className="w-6 h-6 ml-auto mb-4 text-blue-500" />,
+    review:
+      "I love the clean UI and the results speak for themselves. It's incredibly easy to use and integrates seamlessly into my workflow. This is definitely one of the best design tools I've used in a while.",
   },
   {
     name: "Noah T.",
     username: "@noah_codes",
-    socialMedia: <Twitter className="w-6 h-6 ml-auto mb-4 text-sky-500"/>,
+    socialMedia: <Twitter className="w-6 h-6 ml-auto mb-4 text-sky-500" />,
     review: "Does exactly what I need. Reliable and efficient.",
   },
   {
     name: "Emma K.",
-    username: "emmaTechTalk",
-    socialMedia: <Linkedin className="w-6 h-6 ml-auto mb-4 text-blue-500"/>,
-    review: "The features are great, but I wish it had more templates. dssjdiodoazjdscxkqpodzad csakdjazidi ,dsldhazidzaoidj ,azdizahduiazhwq azdusgydz wzadgdu",
+    username: "@emmaTechTalk",
+    socialMedia: <Linkedin className="w-6 h-6 ml-auto mb-4 text-blue-500" />,
+    review:
+      "The features are great, but I wish it had more templates. Still, it’s one of the few tools I consistently rely on. The workflow improvements are undeniable, and it keeps getting better with updates.",
   },
   {
     name: "Aiden L.",
     username: "@aiden_builds",
-    socialMedia: <Twitter className="w-6 h-6 ml-auto mb-4 text-sky-500"/>,
+    socialMedia: <Twitter className="w-6 h-6 ml-auto mb-4 text-sky-500" />,
     review: "Customer support was helpful and quick to respond.",
   },
   {
     name: "Olivia J.",
-    username: "olivia_dev",
-    socialMedia: <Linkedin className="w-6 h-6 ml-auto mb-4 text-blue-500"/>,
-    review: "Takes a little time to get used to, but works great.",
+    username: "@olivia_dev",
+    socialMedia: <Linkedin className="w-6 h-6 ml-auto mb-4 text-blue-500" />,
+    review:
+      "Takes a little time to get used to, but works great. Once I got the hang of it, I found it to be a reliable part of my development toolkit. The learning curve is worth it.",
   },
   {
     name: "Elijah N.",
     username: "@elijahx",
-    socialMedia: <Twitter className="w-6 h-6 ml-auto mb-4 text-sky-500"/>,
+    socialMedia: <Twitter className="w-6 h-6 ml-auto mb-4 text-sky-500" />,
     review: "Impressive speed and quality. Highly recommended.",
   },
   {
     name: "Isabella B.",
-    username: "isabella_beta",
-    socialMedia: <Linkedin className="w-6 h-6 ml-auto mb-4 text-blue-500"/>,
-    review: "It’s okay for basic needs, but lacks customization.",
+    username: "@isabella_beta",
+    socialMedia: <Linkedin className="w-6 h-6 ml-auto mb-4 text-blue-500" />,
+    review:
+      "It’s okay for basic needs, but lacks customization. I hope future updates offer more flexibility in design options and integrations.",
   },
   {
     name: "James C.",
     username: "@jc_dev",
-    socialMedia: <Twitter className="w-6 h-6 ml-auto mb-4 text-sky-500"/>,
-    review: "Way better than other tools I’ve tried. Worth every penny.",
+    socialMedia: <Twitter className="w-6 h-6 ml-auto mb-4 text-sky-500" />,
+    review:
+      "Way better than other tools I’ve tried. Worth every penny. The attention to detail is top-notch and the user experience is just outstanding.",
   },
   {
     name: "Mia D.",
-    username: "miadigital",
-    socialMedia: <Linkedin className="w-6 h-6 ml-auto mb-4 text-blue-500"/>,
-    review: "Nice tool but had a few bugs on mobile. Nice tool but had a few bugs on mobile. Nice tool but had a few bugs on mobile. Nice tool but had a few bugs on mobile.",
+    username: "@miadigital",
+    socialMedia: <Linkedin className="w-6 h-6 ml-auto mb-4 text-blue-500" />,
+    review:
+      "Nice tool but had a few bugs on mobile. That said, the desktop version is flawless and super efficient for daily use. Looking forward to better mobile optimization soon.",
   },
   {
     name: "Lucas W.",
@@ -99,8 +105,9 @@ export const reviews = [
   },
   {
     name: "Amelia S.",
-    username: "ameliaTechie",
-    socialMedia: <Linkedin className="w-6 h-6 ml-auto mb-4 text-blue-500"/>,
-    review: "Really helped me improve my workflow. Great job!",
-  }
+    username: "@ameliaTechie",
+    socialMedia: <Linkedin className="w-6 h-6 ml-auto mb-4 text-blue-500" />,
+    review:
+      "Really helped me improve my workflow. Great job! I’ve already recommended it to several colleagues, and they love it too. This is the kind of tool that actually makes a difference.",
+  },
 ];

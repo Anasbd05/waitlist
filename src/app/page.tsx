@@ -1,7 +1,7 @@
 import Features from '@/components/Features'
 import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
-import {Testimonials} from '@/components/Reviews'
+import Reviews from '@/components/Reviews'
 import Tricker from '@/components/Tricker'
 import React from 'react'
 
@@ -12,7 +12,7 @@ const page = () => {
       <Hero />
       <Tricker />
       <Features />
-      <Testimonials />
+      <Reviews />
     </div>
   )
 }
