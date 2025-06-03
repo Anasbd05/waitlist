@@ -152,25 +152,37 @@ export const pricingPlans = [
   {
     title: "Pro",
     price: 14,
-    Yearlyprice: 118,
-    Save: "Save $50 with yearly pricing(30% off)",
+    billing : "/month" ,
     features: [
       "Unlimited ad generation",
       "AI copy + visuals",
       "Includes all features",
       "Edit & save ads anytime"
     ],
-    bonus :"Priority updates"
+  },
+  {
+    title: "Pro",
+    price: 118,
+    billing : "/year" ,
+    Save: "Save $50 with yearly pricing(30% off)",
+    features: [
+      "Unlimited ad generation",
+      "AI copy + visuals",
+      "Includes all features",
+      "Priority updates" ,
+      "Edit & save ads anytime"
+    ],
   },
   {
     title: "One-Time Payment",
-    price: 89,
+    price: 149,
     features: [
       "Unlimited ad generation",
       "AI copy + visuals",
       "Edit & save ads anytime",
-      "Includes all features"
+      "Includes all features",
+      "Lifetime access & updates"
     ],
     bonus :"Pay once , Use forever"
-  }
+  },
 ];
