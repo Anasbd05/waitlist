@@ -186,3 +186,31 @@ export const pricingPlans = [
     bonus :"Pay once , Use forever"
   },
 ];
+
+
+export const faqs = [
+  {
+  question : "Will the offer be available forever?" ,
+  answer : "No. This is a limited-time test offer. I might extend it if it works well, but there is no guarantee and the price will increase."
+  },
+  {
+    question: "How does the AI generate ads?",
+    answer: "You just describe your product or service, and our AI instantly creates high-converting ad copy and visuals tailored to your input."
+  },
+  {
+    question: "Can I use it for any niche or industry?",
+    answer: "Yes! The tool is built to generate ads for any product, service, or business — from e-commerce to local services."
+  },
+  {
+    question: "Do I need design or writing skills?",
+    answer: "Not at all. The tool is beginner-friendly — no writing or design experience required. Just input your idea and get results."
+  },
+  {
+    question: "What platforms are supported?",
+    answer: "The ads are optimized for all major social media platforms including Facebook, Instagram, TikTok, and more."
+  },
+  {
+    question: "What's the difference between monthly, yearly, and lifetime plans?",
+    answer: "Monthly is flexible and billed each month. Yearly saves you money with a discount. Lifetime is a one-time payment with no renewals."
+  }
+];
