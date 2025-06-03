@@ -147,3 +147,30 @@ export const examples = [
     alt : "black && green modern digital marketing ads"
   },
 ]
+
+export const pricingPlans = [
+  {
+    title: "Pro",
+    price: 14,
+    Yearlyprice: 118,
+    Save: "Save $50 with yearly pricing(30% off)",
+    features: [
+      "Unlimited ad generation",
+      "AI copy + visuals",
+      "Includes all features",
+      "Edit & save ads anytime"
+    ],
+    bonus :"Priority updates"
+  },
+  {
+    title: "One-Time Payment",
+    price: 89,
+    features: [
+      "Unlimited ad generation",
+      "AI copy + visuals",
+      "Edit & save ads anytime",
+      "Includes all features"
+    ],
+    bonus :"Pay once , Use forever"
+  }
+];

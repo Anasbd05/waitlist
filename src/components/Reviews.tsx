@@ -15,7 +15,7 @@ const Reviews = () => {
                     <p className='mt-2 text-lg text-neutral-700'>What are people saying about us?</p>
                 </div>
                 <main className='flex gap-5 md:gap-10 justify-center items-center mt-10 '>
-                    <div className="flex flex-col gap-6">
+                    <div className="flex flex-col [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] gap-6 mt-10">
                         {FirstCol.map((review,index) => (
                             <div key={index} className='card'>
                                 <div className="flex justify-between mb-5">
@@ -25,11 +25,11 @@ const Reviews = () => {
                                     </div>
                                     <span>{review.socialMedia}</span>
                                 </div>
-                                <p className='text-sm text-neutral-800 leading-relaxed'>{review.review}</p>
+                                <p className=' text-neutral-800 leading-relaxed'>{review.review}</p>
                             </div>
                         ))}
                     </div>
-                    <div className="flex flex-col gap-6">
+                    <div className="flex flex-col [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] gap-6 mt-10">
                         {SecondCol.map((review,index) => (
                             <div key={index} className='card '>
                                 <div className="flex justify-between mb-5">
@@ -39,11 +39,11 @@ const Reviews = () => {
                                     </div>
                                     <span>{review.socialMedia}</span>
                                 </div>
-                                <p className='text-sm text-neutral-800 leading-relaxed'>{review.review}</p>
+                                <p className=' text-neutral-800 leading-relaxed'>{review.review}</p>
                             </div>
                         ))}
                     </div>
-                    <div className="hidden lg:flex flex-col gap-6">
+                    <div className="hidden lg:flex flex-col [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] gap-6 mt-10">
                         {ThirdCol.map((review,index) => (
                             <div key={index} className='card '>
                                 <div className="flex justify-between mb-5">
@@ -53,7 +53,7 @@ const Reviews = () => {
                                     </div>
                                     <span>{review.socialMedia}</span>
                                 </div>
-                                <p className='text-sm text-neutral-800 leading-relaxed'>{review.review}</p>
+                                <p className=' text-neutral-800 leading-relaxed'>{review.review}</p>
                             </div>
                         ))}
                     </div>
