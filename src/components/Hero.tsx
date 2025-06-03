@@ -15,7 +15,7 @@ const Hero = () => {
                 <span>The AI ads generator</span>
             </div>
 
-            <main className='lg:w-11/12 mx-auto flex  justify-center lg:justify-between items-center'>
+            <main className='w-11/12 mx-auto flex  justify-center lg:justify-between items-center'>
                 <div className="flex flex-col lg:w-2/4">
                     <h1 className='text-4xl md:text-5xl xl:text-6xl py-2 tag '>Fast, high-performing ads</h1>
                     <p className=' lg:leading-relaxed mt-5'>Generate high-converting ads for any social media platform in seconds with

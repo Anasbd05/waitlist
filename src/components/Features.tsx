@@ -8,11 +8,11 @@ const Features = () => {
             <main className=' w-11/12 mx-auto  flex  justify-center flex-col lg:flex-row  gap-10 items-center'>
                 <div className="flex flex-col lg:w-2/4">
                     <h1 className=' text-4xl md:text-5xl lg:text-[65px] tag mb-8'>Why choose Ads fast?</h1>
-                    <p className='mb-10 text-lg'>Tired of wasting hours on ads that don’t convert? Our AI tool instantly creates scroll-stopping
+                    <p className='mb-4 lg:mb-10  text-lg'>Tired of wasting hours on ads that don’t convert? Our AI tool instantly creates scroll-stopping
                         ad copy and visuals for any platform — no design or writing skills needed. Save time,
                         boost results, and grow your business with ease.
                     </p>
-                    <button className='bg-black font-medium cursor-pointer hover:opacity-80 rounded-xl py-2.5 text-white w-36 '>Get started</button>
+                    <button className='bg-black hidden lg:block font-medium cursor-pointer hover:opacity-80 rounded-xl py-2.5 text-white w-36 '>Get started</button>
                 </div>
                 <div className="lg:w-2/4 grid border grid-cols-2">
                     {features.map((feature,index) => (

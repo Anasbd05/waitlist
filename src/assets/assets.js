@@ -3,6 +3,15 @@ import brain from "./ai.png"
 import fast from "./fast.png"
 import quality from "./quality.png"
 import social from "./social.png"
+
+import i1 from "./01.jpg"
+import i2 from "./2.jpg"
+import i3 from "./3.jpg"
+import i4 from "./4.jpg"
+import i5 from "./5.jpg"
+import i6 from "./6.jpg"
+
+
 export const features = [ 
   {
     icon: brain,
@@ -111,3 +120,30 @@ export const reviews = [
       "Really helped me improve my workflow. Great job! I’ve already recommended it to several colleagues, and they love it too. This is the kind of tool that actually makes a difference.",
   },
 ];
+
+export const examples = [
+  {
+    image :i1 ,
+    alt : "Special offer for selling watches ads"
+  },
+  {
+    image :i2 ,
+    alt : "Modern furniture ads"
+  },
+  {
+    image :i3 ,
+    alt : "Special offer for selling shoes ads"
+  },
+  {
+    image :i4 ,
+    alt : "digital marketing agency ads"
+  },
+  {
+    image :i5 ,
+    alt : "sky blue modern digital marketing ads"
+  },
+  {
+    image :i6 ,
+    alt : "black && green modern digital marketing ads"
+  },
+]

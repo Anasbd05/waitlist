@@ -1,3 +1,4 @@
+import Examples from '@/components/Examples'
 import Features from '@/components/Features'
 import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
@@ -12,7 +13,9 @@ const page = () => {
       <Hero />
       <Tricker />
       <Features />
+      <Examples />
       <Reviews />
+
     </div>
   )
 }
