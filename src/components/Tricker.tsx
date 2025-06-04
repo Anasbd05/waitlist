@@ -2,10 +2,7 @@
 import {motion} from 'framer-motion'
 import React from 'react'
 
-
-
 const Tricker = () => {
-
 
     return (
         <div className='bg-[#fed396] border-t border-b py-6 '>

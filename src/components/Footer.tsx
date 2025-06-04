@@ -19,7 +19,7 @@ const Footer = () => {
                         <Twitter className="p-1.5 hover:bg-gray-200 rounded-md h-8 w-8" />
                         <Instagram className="p-1.5 hover:bg-gray-200 rounded-md h-8 w-8" />
                     </div>
-                    <p>Made by <Link href={"/"} className="text-primary">Anas_bd</Link> </p>
+                    <p>Made by <Link href={"/"} className="tag">Anas_bd</Link> </p>
 
                 </div>
                 <nav className="flex flex-col">
@@ -49,7 +49,7 @@ const Footer = () => {
                 </form>
             </footer>
             <hr className="bg-black w-full h-[.5px]" />
-            <p className="text-center sm:text-sm sm:p-4 p-8">Copyright &copy; 2024 - All right reserved by <span className="text-gradient">AdsFast</span></p>
+            <p className="text-center sm:text-sm sm:p-4 p-8">Copyright &copy; 2024 - All right reserved by <span className="tag">AdsFast</span></p>
         </div>
     );
 };

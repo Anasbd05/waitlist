@@ -162,9 +162,9 @@ export const pricingPlans = [
   },
   {
     title: "Pro",
-    price: 118,
+    price: 120,
     billing : "/year" ,
-    Save: "Save $50 with yearly pricing(30% off)",
+    Save: "$10/Month ,Save $48 with yearly pricing(30% off)",
     features: [
       "Unlimited ad generation",
       "AI copy + visuals",
