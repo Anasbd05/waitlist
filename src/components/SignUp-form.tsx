@@ -68,7 +68,7 @@ export async function SignupForm({
                     <Label htmlFor="Confirmpassword">Confirm password</Label>
                     <Input id="Confirmpassword" name="confirmpassword" type="password" required />
                 </div>
-                <Button type="submit" className="w-full">
+                <Button type="submit" className="w-full cursor-pointer">
                     Sign up
                 </Button>
             </div>

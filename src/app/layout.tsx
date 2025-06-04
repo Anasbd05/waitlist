@@ -1,7 +1,6 @@
 import type {Metadata} from "next";
 import {Inter,Noto_Sans_Display} from "next/font/google";
 import "./globals.css";
-import {ToastContainer} from "react-toastify";
 
 const inter = Inter({
   variable: "--font-geist-sans",
@@ -29,18 +28,6 @@ export default function RootLayout({
         className={`${inter.className} ${noto.variable} bg-white text-black antialiased`}
       >
         {children}
-        <ToastContainer
-          position="top-right"
-          autoClose={3000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick={false}
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="light"
-        />
       </body>
     </html>
   );
