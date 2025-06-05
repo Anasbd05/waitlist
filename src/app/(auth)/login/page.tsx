@@ -2,6 +2,7 @@ import {LoginForm} from "@/components/login-form"
 import logo from "@/assets/logo.ico"
 import Image from "next/image"
 import Link from "next/link"
+import loginpic from "@/assets/loginpic.png"
 
 export default function LoginPage() {
     return (
@@ -24,9 +25,9 @@ export default function LoginPage() {
             <div className="bg-muted relative hidden lg:block">
                 <Image
                     fill
-                    src="/placeholder.svg"
-                    alt="Image"
-                    className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
+                    src={loginpic}
+                    alt="login Image"
+                    className="absolute inset-0 h-full w-full dark:brightness-[0.2] dark:grayscale"
                 />
             </div>
         </div>

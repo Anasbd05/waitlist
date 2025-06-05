@@ -8,6 +8,8 @@ import {Label} from "@/components/ui/label"
 import Image from 'next/image'
 import logo from "@/assets/logo.ico"
 import Link from 'next/link'
+import loginpic from "@/assets/loginpic.png"
+
 
 const page = ({
     className,
@@ -90,8 +92,8 @@ const page = ({
             <div className="bg-muted relative hidden lg:block">
                 <Image
                     fill
-                    src="/placeholder.svg"
-                    alt="Image"
+                    src={loginpic}
+                    alt="login Image"
                     className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
                 />
             </div>
