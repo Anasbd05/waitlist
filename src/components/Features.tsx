@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Features = () => {
     return (
-        <section className=' py-8  lg:py-14 bg-accent/70'>
+        <section id='features' className=' py-8  lg:py-14 bg-accent/70'>
             <main className=' lg:w-11/12 px-5 md:px-10 lg:px-0 ml-auto  flex  justify-center flex-col lg:flex-row  gap-10 items-center'>
                 <div className="flex flex-col lg:w-2/4">
                     <h1 className=' text-4xl md:text-5xl lg:text-[65px] tag mb-8'>Why choose Ads fast?</h1>

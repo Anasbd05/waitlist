@@ -8,7 +8,7 @@ const Reviews = () => {
     const ThirdCol = reviews.slice(8,12);
 
     return (
-        <section className='py-10 md:py-12 bg-gray-50 lg:py-16'>
+        <section id='reviews' className='py-10 md:py-12 bg-gray-50 lg:py-16'>
             <main className='w-11/12 mx-auto'>
                 <div className="flex items-center flex-col">
                     <h1 className='tag text-4xl md:text-5xl lg:text-[65px]'>Reviews</h1>

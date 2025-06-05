@@ -17,7 +17,10 @@ const Navbar = () => {
                 <Link className='hover:underline decoration-primary underline-offset-4 ' href={"#pricing"}>Pricing</Link>
                 <Link className='hover:underline decoration-primary underline-offset-4 ' href={"#faqs"}>Faqs</Link>
             </div>
-            <button className='py-2 px-5 rounded-lg hover:opacity-80 bg-black hidden md:block cursor-pointer text-white'>Login</button>
+            <Link href={"/login"}
+                className='py-2 px-5 rounded-lg hover:opacity-80 bg-black hidden md:block cursor-pointer text-white' >
+                Login
+            </Link>
             <Menu className='text-black md:hidden' />
         </section>
     )

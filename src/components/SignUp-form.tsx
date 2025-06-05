@@ -21,7 +21,6 @@ export async function SignupForm({
 
     const signUp = async (formData: FormData) => {
         "use server"
-
         const origin = (await headers()).get("origin")
 
         const email = formData.get('email') as string
@@ -31,13 +30,12 @@ export async function SignupForm({
         if(password !== confirmpassword) {
             alert("Passwords don't match")
         }
-
         const supabase = createClient()
         const {error} = await supabase.auth.signUp({
             email,
             password,
             options: {
-                emailRedirectTo: `${origin}/dashboard`
+                emailRedirectTo: `${origin}/login`
             }
         })
         if(error) {

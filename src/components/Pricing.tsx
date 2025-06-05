@@ -4,7 +4,7 @@ import React from 'react'
 
 const Pricing = () => {
     return (
-        <section className='py-12 w-11/12 mx-auto'>
+        <section id='pricing' className='py-12 w-11/12 mx-auto'>
             <div className="flex items-center flex-col">
                 <h1 className='tag font-header text-lg mb-2'>Pricing</h1>
                 <p className='font-bold text-3xl lg:text-5xl tracking-tight font-header '>Generate Ads fast, with less effort.</p>
