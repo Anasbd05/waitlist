@@ -168,13 +168,13 @@ export const pricingPlans = [
     features: [
       "Unlimited ad generation",
       "AI copy + visuals",
+      "Edit & save ads anytime",
       "Includes all features",
       "Priority updates" ,
-      "Edit & save ads anytime"
     ],
   },
   {
-    title: "One-Time Payment",
+    title: "Beast",
     price: 149,
     features: [
       "Unlimited ad generation",

@@ -7,9 +7,27 @@ import Navbar from '@/components/Navbar'
 import Pricing from '@/components/Pricing'
 import Reviews from '@/components/Reviews'
 import Tricker from '@/components/Tricker'
+import {getProducts,getUser} from '@/utils/supabase/queries'
+import {createClient} from '@/utils/supabase/server'
 import React from 'react'
 
-const page = () => {
+
+
+
+const page = async () => {
+
+  const supabase = await createClient()
+
+  const [user,products] = await Promise.all([
+    getUser(supabase),
+    getProducts(supabase)
+  ])
+
+
+  // if(user) {
+  //   return redirect('/dashboard')
+  // }
+
   return (
     <div>
       <Navbar />
@@ -18,7 +36,7 @@ const page = () => {
       <Features />
       <Examples />
       <Reviews />
-      <Pricing />
+      <Pricing products={products ?? []} />
       <Faqs />
       <Footer />
 

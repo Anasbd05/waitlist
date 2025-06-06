@@ -60,6 +60,7 @@ export const createClient = (request: NextRequest) => {
     return {supabase,response};
 };
 
+
 export const updateSession = async (request: NextRequest) => {
     try {
         // This `try/catch` block is only here for the interactive tutorial.
@@ -68,9 +69,17 @@ export const updateSession = async (request: NextRequest) => {
 
         // This will refresh session if expired - required for Server Components
         // https://supabase.com/docs/guides/auth/server-side/nextjs
-        await supabase.auth.getUser();
 
-        return response;
+
+        const {data: {user}} = await supabase.auth.getUser();
+
+        if(
+            !user &&
+            !request.nextUrl.pathname.startsWith('/login') &&
+            !request.nextUrl.pathname.startsWith('/api/webhooks')
+        )
+
+            return response;
     } catch(e) {
         // If you are here, a Supabase client could not be created!
         // This is likely because you have not set up environment variables.
