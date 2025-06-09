@@ -3,8 +3,13 @@ import Link from 'next/link'
 import React from 'react'
 import logo from '@/assets/logo.png'
 import {Menu} from 'lucide-react'
+import {createClient} from '@/utils/supabase/server'
 
-const Navbar = () => {
+const Navbar = async () => {
+    const supabase = createClient()
+    const {data: {user}} = await supabase.auth.getUser()
+
+
     return (
         <section className='py-4 px-4 lg:px-14 flex w-full justify-between items-center sticky top-0 z-50 border-b border-gray-400 bg-white'>
             <Link href={"/"} className='flex gap-0.5 items-center'>
@@ -17,10 +22,13 @@ const Navbar = () => {
                 <Link className='hover:underline decoration-primary underline-offset-4 ' href={"#pricing"}>Pricing</Link>
                 <Link className='hover:underline decoration-primary underline-offset-4 ' href={"#faqs"}>Faqs</Link>
             </div>
-            <Link href={"/login"}
+            {user ? <Link href={"/dashboard"}
+                className='py-2 px-5 rounded-lg hover:opacity-80 bg-black hidden md:block cursor-pointer text-white' >
+                Dashboard
+            </Link> : <Link href={"/login"}
                 className='py-2 px-5 rounded-lg hover:opacity-80 bg-black hidden md:block cursor-pointer text-white' >
                 Login
-            </Link>
+            </Link>}
             <Menu className='text-black md:hidden' />
         </section>
     )

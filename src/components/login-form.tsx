@@ -5,12 +5,17 @@ import {Label} from "@/components/ui/label"
 import Link from "next/link"
 import {redirect} from "next/navigation"
 import {createClient} from "@/utils/supabase/server"
-export function LoginForm({
+export async function LoginForm({
   className,
   ...props
 }: React.ComponentProps<"form">) {
 
+  const supabase = createClient()
+  const {data: {session}} = await supabase.auth.getSession()
 
+  if(session) {
+    redirect('/dashboard')
+  }
 
 
 

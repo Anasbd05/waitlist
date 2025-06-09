@@ -23,7 +23,7 @@ const ExamplesSlider = () => {
                     spaceBetween: 40,
                 },
                 1024: {
-                    slidesPerView: 3,
+                    slidesPerView: 4,
                     spaceBetween: 50,
                 },
             }}
@@ -39,7 +39,7 @@ const ExamplesSlider = () => {
                 <SwiperSlide
                     key={index}
                     className="w-full mx-auto px-4 py-8 cursor-grab">
-                    <Image src={image.image} className='w-full rounded-md object-cover' width={500} height={800} alt={image.alt} />
+                    <Image src={image.image} className='w-[250px] rounded-md object-cover' width={300} height={500} alt={image.alt} />
                 </SwiperSlide>
             ))}
         </Swiper>

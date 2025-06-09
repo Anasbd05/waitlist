@@ -83,13 +83,13 @@ export function NavUser({
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuGroup>
-              <Link href={"/dashboard/settings"} className="w-full cursor-pointer">
+              <Link href={"/settings"} className="w-full cursor-pointer">
                 <DropdownMenuItem>
                   <Settings />
                   Settings
                 </DropdownMenuItem>
               </Link>
-              <Link href={"/dashboard/billing"} className="w-full cursor-pointer">
+              <Link href={"/billing"} className="w-full cursor-pointer">
                 <DropdownMenuItem>
                   <CreditCard />
                   Billing

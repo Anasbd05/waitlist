@@ -150,7 +150,7 @@ export const examples = [
 
 export const pricingPlans = [
   {
-    title: "Pro",
+    title: "Basic",
     price: 14,
     billing : "/month" ,
     features: [
