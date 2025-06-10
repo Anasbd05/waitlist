@@ -17,24 +17,24 @@ import adimage from '@/assets/2.jpg'
 
 const page = () => {
     return (
-        <section className='mt-10 w-4/5 mx-auto'>
+        <section className='mt-10 w-11/12 mx-auto'>
             <h1 className='text-3xl font-semibold'>Create Ad</h1>
-            <main className='flex w-full gap-4 mt-6 '>
-                <div className="flex bg-white shadow-sm rounded-lg px-4 pt-8 flex-col  gap-6">
-                    <div className='flex w-[370px] gap-4 items-center'>
-                        <main className='w-2/4'>
+            <main className='flex flex-col lg:flex-row w-full justify-between gap-x-4 gap-y-10 mt-6 '>
+                <div className="flex bg-white lg:w-2/4 shadow-sm rounded-lg px-4 pt-8 flex-col  gap-6">
+                    <div className='flex w-full justify-between gap-4 items-center'>
+                        <main className=' lg:w-2/4'>
                             <Label className='font-semibold mb-2'>Quantity of ads</Label>
                             <Input placeholder='1' type='number' min={1} max={3} />
                         </main>
-                        <main className='w-2/4'>
+                        <main className='lg:w-2/4'>
                             <Label className='font-semibold mb-2'>Aspect_ratio</Label>
                             <Select>
                                 <SelectTrigger className="w-full">
-                                    <SelectValue placeholder="Select a fruit" />
+                                    <SelectValue placeholder="Select a size" />
                                 </SelectTrigger>
                                 <SelectContent>
                                     <SelectGroup>
-                                        <SelectLabel>Size</SelectLabel>
+                                        <SelectLabel>Sizes</SelectLabel>
                                         <SelectItem value="1:1">1:1</SelectItem>
                                         <SelectItem value="2:1">2:1</SelectItem>
                                         <SelectItem value="2:3">2:3</SelectItem>
@@ -70,9 +70,11 @@ const page = () => {
                          remote workers and travelers. Include a strong hook, 3 key benefits, 
                          and a call-to-action. Tone: modern and persuasive' />
                     </div>
-                    <Button className='cursor-pointer'>Generate</Button>
+                    <Button className='cursor-pointer mb-2'>Generate</Button>
                 </div>
-                <Image alt='' src={adimage} width={400} height={400} />
+                <div className='h-[450px] relative lg:w-[375px] '>
+                    <Image alt='' src={adimage} className='absolute' fill />
+                </div>
             </main>
         </section>
     )
