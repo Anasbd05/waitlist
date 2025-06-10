@@ -12,6 +12,11 @@ import i5 from "./5.jpg"
 import i6 from "./6.jpg"
 
 
+import gen1 from "./gen1.jpg"
+import gen2 from "./gen2.jpg"
+import gen3 from "./gen3.jpg"
+import gen4 from "./gen4.jpg"
+
 export const features = [ 
   {
     icon: brain,
@@ -214,3 +219,48 @@ export const faqs = [
     answer: "Monthly is flexible and billed each month. Yearly saves you money with a discount. Lifetime is a one-time payment with no renewals."
   }
 ];
+
+
+export const generated_ads = [
+
+  {
+    id: 1,
+    image: gen1,
+    alt: "Ad Image",
+    title: "Room Glow",
+    desc: "RGB lights to instantly upgrade your space."
+  },
+
+  {
+    id: 2,
+    image: gen2,
+    alt: "Ad Image",
+    title: "Posture Fix",
+    desc: "Relieve back pain and improve your posture fast."
+  },
+
+  {
+    id: 3,
+    image: gen3,
+    alt: "Ad Image",
+    title: "Flower Light",
+    desc: "A fun glowing gift everyone will love."
+  },
+
+  {
+    id: 4,
+    image: gen4,
+    alt: "Ad Image",
+    title: "Desk Boost",
+    desc: "Sleek LED stand that elevates your setup."
+  },
+   {
+    id: 5,
+    image: gen3,
+    alt: "Ad Image",
+    title: "Flower Light",
+    desc: "A fun glowing gift everyone will love."
+  },
+
+
+]

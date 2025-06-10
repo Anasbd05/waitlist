@@ -18,8 +18,8 @@ import adimage from '@/assets/2.jpg'
 const page = () => {
     return (
         <section className='mt-10 w-11/12 mx-auto'>
-            <h1 className='text-3xl font-semibold'>Create Ad</h1>
-            <main className='flex flex-col lg:flex-row w-full justify-between gap-x-4 gap-y-10 mt-6 '>
+            <h1 className='text-3xl mb-6 font-semibold'>Create Ad</h1>
+            <main className='flex flex-col lg:flex-row w-full justify-between gap-x-4 gap-y-10  '>
                 <div className="flex bg-white lg:w-2/4 shadow-sm rounded-lg px-4 pt-8 flex-col  gap-6">
                     <div className='flex w-full justify-between gap-4 items-center'>
                         <main className=' lg:w-2/4'>
