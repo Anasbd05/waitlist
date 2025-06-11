@@ -247,8 +247,7 @@ export const generated_ads = [
     desc: "A fun glowing gift everyone will love."
   },
 
-  {
-    id: 4,
+  {    id: 4,
     image: gen4,
     alt: "Ad Image",
     title: "Desk Boost",
@@ -261,6 +260,4 @@ export const generated_ads = [
     title: "Flower Light",
     desc: "A fun glowing gift everyone will love."
   },
-
-
 ]
