@@ -9,7 +9,6 @@ const Navbar = async () => {
     const supabase = createClient()
     const {data: {user}} = await supabase.auth.getUser()
 
-
     return (
         <section className='py-4 px-4 lg:px-14 flex w-full justify-between items-center sticky top-0 z-50 border-b border-gray-400 bg-white'>
             <Link href={"/"} className='flex gap-0.5 items-center'>

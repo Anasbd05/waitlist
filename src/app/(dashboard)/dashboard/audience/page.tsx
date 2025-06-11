@@ -19,7 +19,7 @@ const Page = async () => {
             <div className="w-full flex items-center justify-between">
                 <h1 className="text-3xl font-semibold mb-6">My Audiences</h1>
             </div>
-            <main className="grid grid-cols-2 xl:grid-cols-3 gap-4 gap-y-6 ">
+            <main className="grid grid-cols-1  md:grid-cols-2 xl:grid-cols-3 gap-4 gap-y-6 ">
                 {data.map((audience) => (
                     <div className='flex gap-3 p-5 items-start border rounded-lg' key={audience.id}>
                         <Image className='rounded-full' alt='' src={userpic} width={50} height={50} />

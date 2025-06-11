@@ -14,8 +14,16 @@ import {Button} from '@/components/ui/button'
 import Image from 'next/image'
 
 import adimage from '@/assets/2.jpg'
+import {createClient} from '@/utils/supabase/server'
 
-const page = () => {
+const page = async () => {
+
+    const supabase = await createClient()
+
+    const {data} = await supabase
+        .from('audiences')
+        .select('*')
+
     return (
         <section className='mt-10 w-11/12 mx-auto'>
             <h1 className='text-3xl mb-6 font-semibold'>Create Ad</h1>
@@ -55,8 +63,10 @@ const page = () => {
                             <SelectContent>
                                 <SelectGroup>
                                     <SelectLabel>Audience</SelectLabel>
-                                    <SelectItem value="Commercial">Commercial</SelectItem>
-                                    <SelectItem value="Lowyers">Lowyers</SelectItem>
+                                    {data?.length === 0 ? <p className='py-1.5 pr-8 pl-2 font-medium text-sm'>No Audiences</p> :
+                                        data?.map((audience,index) => (
+                                            <SelectItem key={index} value={audience.name} > {audience.name} </SelectItem>
+                                        ))}
                                 </SelectGroup>
                             </SelectContent>
                         </Select>

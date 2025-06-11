@@ -2,8 +2,19 @@ import {LoginForm} from "@/components/login-form"
 import logo from "@/assets/logo.ico"
 import Image from "next/image"
 import Link from "next/link"
+import {createClient} from "@/utils/supabase/server"
+import {redirect} from "next/navigation"
 
-export default function LoginPage() {
+export default async function LoginPage() {
+
+    const supabase = await createClient()
+
+    const {data: {session}} = await supabase.auth.getSession()
+
+    if(session) {
+        redirect('/dashboard')
+    }
+
     return (
         <div className="grid min-h-svh lg:grid-cols-2">
             <div className="flex flex-col gap-4 p-6 md:p-10">
