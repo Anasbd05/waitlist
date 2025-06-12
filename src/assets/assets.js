@@ -261,3 +261,16 @@ export const generated_ads = [
     desc: "A fun glowing gift everyone will love."
   },
 ]
+
+
+export const Sizes = [
+  { size: "1:1", value: "1/1" },
+  { size: "4:3", value: "4/3" },
+  { size: "3:2", value: "3/2" },
+  { size: "16:9", value: "16/9" },
+  { size: "9:16", value: "9/16" },
+  { size: "5:4", value: "5/4" },
+  { size: "4:5", value: "4/5" },
+  { size: "1:2", value: "1/2" },
+];
+
