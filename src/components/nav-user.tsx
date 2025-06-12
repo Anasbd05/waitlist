@@ -27,6 +27,8 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar"
 import Link from "next/link"
+import {supabase} from "@/utils/supabase/client"
+import {useRouter} from "next/navigation"
 
 export function NavUser({
   user,
@@ -38,6 +40,16 @@ export function NavUser({
   }
 }) {
   const {isMobile} = useSidebar()
+
+
+  const logOut = async () => {
+    const {error} = await supabase.auth.signOut()
+    if(error) {
+      console.log(error)
+    }
+  }
+
+  const router = useRouter()
 
 
 
@@ -97,10 +109,18 @@ export function NavUser({
               </Link>
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
-            <Link href={"/login"} className="bg-red-100 flex items-center gap-2 rounded-sm px-2 py-1.5 text-sm text-red-600" >
-              <LogOut className="size-4 text-destructive " />
-              Logout
-            </Link>
+            <DropdownMenuItem asChild>
+              <button
+                onClick={async () => {
+                  await logOut()
+                  router.push('/login')
+                }}
+                className="bg-red-100 flex items-center gap-2 rounded-sm px-2 py-1.5 text-sm text-red-600 w-full"
+              >
+                <LogOut className="size-4 text-destructive" />
+                Logout
+              </button>
+            </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       </SidebarMenuItem>

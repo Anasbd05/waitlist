@@ -17,25 +17,25 @@ export async function LoginForm({
     redirect('/dashboard')
   }
 
-
-
-
   const login = async (formData: FormData) => {
     "use server"
+    try {
+      const email = formData.get('email') as string
+      const password = formData.get('password') as string
 
-    const email = formData.get('email') as string
-    const password = formData.get('password') as string
+      const supabase = createClient()
 
-    const supabase = createClient()
-
-    const {error} = await supabase.auth.signInWithPassword({
-      email,
-      password,
-    })
-    if(error) {
+      const {error} = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      })
+      if(error) {
+        console.log(error)
+      } else {
+        redirect('/dashboard')
+      }
+    } catch(error) {
       console.log(error)
-    } else {
-      redirect('/dashboard')
     }
   }
 

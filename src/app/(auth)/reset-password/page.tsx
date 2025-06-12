@@ -10,18 +10,25 @@ import logo from "@/assets/logo.ico"
 import Link from 'next/link'
 import loginpic from "@/assets/loginpic.png"
 
-
 const page = ({
     className,
     searchParams,
     ...props
 }: {
-    searchParams: {message: string; code: string};
+    searchParams: {message?: string; code?: string};
 } & React.ComponentProps<"form">) => {
+
+    // Server action handler
     const newPassword = async (formData: FormData) => {
         'use server';
 
         const password = formData.get('password') as string;
+        const confirmpassword = formData.get('confirmpassword') as string;
+
+        if(password !== confirmpassword) {
+            // You can't alert on server side. You could throw or redirect with error.
+            redirect(`/reset-password?message=Passwords do not match!&code=${searchParams.code ?? ''}`);
+        }
 
         if(searchParams.code) {
             const supabase = createClient();
@@ -34,8 +41,8 @@ const page = ({
                     `/reset-password?message=Unable to reset Password. Link expired!`
                 );
             }
-
         }
+
         const supabase = createClient();
         const {error} = await supabase.auth.updateUser({
             password,
@@ -44,7 +51,7 @@ const page = ({
         if(error) {
             console.log(error);
             return redirect(
-                `/reset-password?message=Unable to reset Password. Try again!`
+                `/reset-password?message=Unable to reset Password. Try again!&code=${searchParams.code ?? ''}`
             );
         }
 
@@ -52,6 +59,7 @@ const page = ({
             `/login?message=Your Password has been reset successfully. Sign in.`
         );
     }
+
     return (
         <div className="grid min-h-svh lg:grid-cols-2">
             <div className="flex flex-col gap-4 p-6 md:p-10">
@@ -78,12 +86,20 @@ const page = ({
                                     <Input id="password" type="password" name="password" required />
                                 </div>
                                 <div className="grid gap-3">
-                                    <Label htmlFor="Confirmpassword">Confirm password</Label>
-                                    <Input id="Confirmpassword" type="password" name="Confirmpassword" required />
+                                    <Label htmlFor="confirmpassword">Confirm password</Label>
+                                    <Input id="confirmpassword" type="password" name="confirmpassword" required />
                                 </div>
                                 <Button type="submit" className="w-full cursor-pointer">
                                     Submit
                                 </Button>
+                                {searchParams?.message && (
+                                    <p className={`text-center text-sm ${searchParams.message.toLowerCase().includes("success")
+                                        ? "text-green-600"
+                                        : "text-red-600"
+                                        }`}>
+                                        {searchParams.message}
+                                    </p>
+                                )}
                             </div>
                         </form>
                     </div>

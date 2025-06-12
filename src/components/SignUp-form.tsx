@@ -9,8 +9,11 @@ import {redirect} from "next/navigation"
 
 export async function SignupForm({
     className,
+    searchParams,
     ...props
-}: React.ComponentProps<"form">) {
+}: {
+    searchParams: {message: string; code: string};
+} & React.ComponentProps<"form">) {
 
     const supabase = createClient()
     const {data: {session}} = await supabase.auth.getSession()
@@ -18,7 +21,6 @@ export async function SignupForm({
     if(session) {
         redirect('/dashboard')
     }
-
     const signUp = async (formData: FormData) => {
         "use server"
         const origin = (await headers()).get("origin")
@@ -41,7 +43,7 @@ export async function SignupForm({
         if(error) {
             console.log(error.message)
         } else {
-            console.log('check your email for confirmation')
+            redirect("/signup?message=signup-success")
         }
     }
 
@@ -53,22 +55,29 @@ export async function SignupForm({
                     Enter your email below to Sign up
                 </p>
             </div>
-            <div className="grid gap-6">
-                <div className="grid gap-3">
+            <div className="grid gap-5">
+                <div className="grid gap-1">
                     <Label htmlFor="email">Email</Label>
                     <Input id="email" type="email" name="email" placeholder="m@example.com" required />
                 </div>
-                <div className="grid gap-3">
+                <div className="grid gap-1">
                     <Label htmlFor="password">Password</Label>
                     <Input id="password" name="password" type="password" required />
                 </div>
-                <div className="grid gap-3">
+                <div className="grid gap-1">
                     <Label htmlFor="Confirmpassword">Confirm password</Label>
                     <Input id="Confirmpassword" name="confirmpassword" type="password" required />
                 </div>
-                <Button type="submit" className="w-full cursor-pointer">
-                    Sign up
-                </Button>
+                <div className="flex flex-col gap-2">
+                    <Button type="submit" className="w-full cursor-pointer">
+                        Sign up
+                    </Button>
+                    {searchParams?.message === "signup-success" && (
+                        <p className="text-green-600 text-sm text-center">
+                            We’ve sent you a verification email. Click the link inside to finalize your signup.
+                        </p>
+                    )}
+                </div>
             </div>
             <div className="text-center text-sm">
                 have an account?{" "}
