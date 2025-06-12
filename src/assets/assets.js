@@ -1,4 +1,3 @@
-import { Linkedin, Twitter } from "lucide-react"
 import brain from "./ai.png"
 import fast from "./fast.png"
 import quality from "./quality.png"
@@ -16,6 +15,8 @@ import gen1 from "./gen1.jpg"
 import gen2 from "./gen2.jpg"
 import gen3 from "./gen3.jpg"
 import gen4 from "./gen4.jpg"
+import profile from "./userpic.png"
+
 
 export const features = [ 
   {
@@ -48,80 +49,80 @@ export const reviews = [
   {
     name: "Liam M.",
     username: "@liam_maker",
-    socialMedia: <Twitter className="w-6 h-6 ml-auto mb-4 text-sky-500" />,
-    review: "This tool saved me hours! Super intuitive and fast.",
+    img : profile,
+    body: "This tool saved me hours! Super intuitive and fast.",
   },
   {
     name: "Sophia R.",
     username: "@sophia_designs",
-    socialMedia: <Linkedin className="w-6 h-6 ml-auto mb-4 text-blue-500" />,
-    review:
+    img : profile,
+    body:
       "I love the clean UI and the results speak for themselves. It's incredibly easy to use and integrates seamlessly into my workflow. This is definitely one of the best design tools I've used in a while.",
   },
   {
     name: "Noah T.",
     username: "@noah_codes",
-    socialMedia: <Twitter className="w-6 h-6 ml-auto mb-4 text-sky-500" />,
-    review: "Does exactly what I need. Reliable and efficient.",
+    img : profile,
+    body: "Does exactly what I need. Reliable and efficient.",
   },
   {
     name: "Emma K.",
     username: "@emmaTechTalk",
-    socialMedia: <Linkedin className="w-6 h-6 ml-auto mb-4 text-blue-500" />,
-    review:
+    img : profile,
+    body:
       "The features are great, but I wish it had more templates. Still, it’s one of the few tools I consistently rely on. The workflow improvements are undeniable, and it keeps getting better with updates.",
   },
   {
     name: "Aiden L.",
     username: "@aiden_builds",
-    socialMedia: <Twitter className="w-6 h-6 ml-auto mb-4 text-sky-500" />,
-    review: "Customer support was helpful and quick to respond.",
+    img : profile,
+    body: "Customer support was helpful and quick to respond.",
   },
   {
     name: "Olivia J.",
     username: "@olivia_dev",
-    socialMedia: <Linkedin className="w-6 h-6 ml-auto mb-4 text-blue-500" />,
-    review:
+    img : profile,
+    body:
       "Takes a little time to get used to, but works great. Once I got the hang of it, I found it to be a reliable part of my development toolkit. The learning curve is worth it.",
   },
   {
     name: "Elijah N.",
     username: "@elijahx",
-    socialMedia: <Twitter className="w-6 h-6 ml-auto mb-4 text-sky-500" />,
-    review: "Impressive speed and quality. Highly recommended.",
+    img : profile,
+    body: "Impressive speed and quality. Highly recommended.",
   },
   {
     name: "Isabella B.",
     username: "@isabella_beta",
-    socialMedia: <Linkedin className="w-6 h-6 ml-auto mb-4 text-blue-500" />,
-    review:
+    img : profile,
+    body:
       "It’s okay for basic needs, but lacks customization. I hope future updates offer more flexibility in design options and integrations.",
   },
   {
     name: "James C.",
     username: "@jc_dev",
-    socialMedia: <Twitter className="w-6 h-6 ml-auto mb-4 text-sky-500" />,
-    review:
+    img : profile,
+    body:
       "Way better than other tools I’ve tried. Worth every penny. The attention to detail is top-notch and the user experience is just outstanding.",
   },
   {
     name: "Mia D.",
     username: "@miadigital",
-    socialMedia: <Linkedin className="w-6 h-6 ml-auto mb-4 text-blue-500" />,
-    review:
+    img : profile,
+    body:
       "Nice tool but had a few bugs on mobile. That said, the desktop version is flawless and super efficient for daily use. Looking forward to better mobile optimization soon.",
   },
   {
     name: "Lucas W.",
     username: "@lucas_the_dev",
-    socialMedia: <Twitter className="w-6 h-6 ml-auto mb-4 text-sky-500" />,
-    review: "Simple, powerful, and efficient. What else do you need?",
+    img : profile,
+    body: "Simple, powerful, and efficient. What else do you need?",
   },
   {
     name: "Amelia S.",
     username: "@ameliaTechie",
-    socialMedia: <Linkedin className="w-6 h-6 ml-auto mb-4 text-blue-500" />,
-    review:
+    img : profile,
+    body:
       "Really helped me improve my workflow. Great job! I’ve already recommended it to several colleagues, and they love it too. This is the kind of tool that actually makes a difference.",
   },
 ];

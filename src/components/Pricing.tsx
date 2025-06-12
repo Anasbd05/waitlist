@@ -15,7 +15,7 @@ const Pricing = () => {
             <main className='flex md:flex-row flex-col mt-18 justify-center items-center '>
                 {
                     pricingPlans.map((pricing,index) => (
-                        <div className={`px-10 py-7 w-[360px] border flex flex-col justify-between ${pricing.title === "Beast" && "md:scale-110 scale-105 bg-black text-white"} `} key={index}>
+                        <div className={`px-10 py-7 sm:w-[360px] border gap-y-2 flex flex-col justify-between ${pricing.title === "Beast" && "md:scale-110 scale-105 bg-black text-white"} `} key={index}>
                             <div className='flex flex-col mb-10 gap-2'>
                                 <h2 className={`text-lg font-semibold text-neutral-700 ${pricing.title === "Beast" && "text-white/90"} `}>{pricing.title}</h2>
                                 <h1 className={`font-bold text-4xl ${pricing.title === "Beast" ? "text-white font-header font-bold tracking-tight" : "tag"} `}>

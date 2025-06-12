@@ -1,66 +1,76 @@
-import React from 'react'
-import {reviews} from '@/assets/assets'
+import {cn} from "@/lib/utils";
+import {Marquee} from "@/components/magicui/marquee";
+import {reviews} from "@/assets/assets";
+import Image,{StaticImageData} from "next/image";
 
-const Reviews = () => {
 
-    const FirstCol = reviews.slice(0,4);
-    const SecondCol = reviews.slice(4,8);
-    const ThirdCol = reviews.slice(8,12);
+const firstRow = reviews.slice(0,reviews.length / 2);
+const secondRow = reviews.slice(reviews.length / 2);
+const thirdRow = reviews.slice(reviews.length / 2);
 
+const ReviewCard = ({
+    img,
+    name,
+    username,
+    body,
+}: {
+    img: StaticImageData;
+    name: string;
+    username: string;
+    body: string;
+}) => {
     return (
-        <section id='reviews' className='py-10 md:py-12 bg-gray-50 lg:py-16'>
-            <main className='w-11/12 mx-auto'>
+        <figure
+            className={cn(
+                "relative h-full w-full cursor-pointer overflow-hidden rounded-xl border p-2 md:p-4",
+                // light styles
+                "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
+                // dark styles
+                "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
+            )}
+        >
+            <div className="flex flex-row items-center gap-2">
+                <Image className="rounded-full" width="32" height="32" alt="" src={img} />
+                <div className="flex flex-col">
+                    <figcaption className="text-sm font-medium dark:text-white">
+                        {name}
+                    </figcaption>
+                    <p className="text-xs font-medium dark:text-white/40">{username}</p>
+                </div>
+            </div>
+            <blockquote className="mt-2 text-sm">{body}</blockquote>
+        </figure>
+    );
+};
+
+export function Reviews() {
+    return (
+        <section id='reviews' className='py-10 md:py-12  lg:py-16'>
+            <main className='w-full sm:w-11/12 mx-auto'>
                 <div className="flex items-center flex-col">
                     <h1 className='tag text-4xl md:text-5xl lg:text-[65px]'>Reviews</h1>
                     <p className='mt-2 text-lg text-neutral-700'>What are people saying about us?</p>
                 </div>
-                <main className='flex gap-5 md:gap-10 justify-center items-center mt-10 '>
-                    <div className="flex flex-col [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] gap-6 mt-10">
-                        {FirstCol.map((review,index) => (
-                            <div key={index} className='card'>
-                                <div className="flex justify-between mb-5">
-                                    <div className="flex flex-col">
-                                        <h3 className='font-semibold'>{review.name}</h3>
-                                        <span className='text-xs text-neutral-700'>{review.username}</span>
-                                    </div>
-                                    <span>{review.socialMedia}</span>
-                                </div>
-                                <p className=' text-neutral-800 leading-relaxed'>{review.review}</p>
-                            </div>
-                        ))}
-                    </div>
-                    <div className="flex flex-col [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] gap-6 mt-10">
-                        {SecondCol.map((review,index) => (
-                            <div key={index} className='card '>
-                                <div className="flex justify-between mb-5">
-                                    <div className="flex flex-col">
-                                        <h3 className='font-semibold'>{review.name}</h3>
-                                        <span className='text-xs'>{review.username}</span>
-                                    </div>
-                                    <span>{review.socialMedia}</span>
-                                </div>
-                                <p className=' text-neutral-800 leading-relaxed'>{review.review}</p>
-                            </div>
-                        ))}
-                    </div>
-                    <div className="hidden lg:flex flex-col [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] gap-6 mt-10">
-                        {ThirdCol.map((review,index) => (
-                            <div key={index} className='card '>
-                                <div className="flex justify-between mb-5">
-                                    <div className="flex flex-col">
-                                        <h3 className='font-semibold'>{review.name}</h3>
-                                        <span className='text-xs'>{review.username}</span>
-                                    </div>
-                                    <span>{review.socialMedia}</span>
-                                </div>
-                                <p className=' text-neutral-800 leading-relaxed'>{review.review}</p>
-                            </div>
-                        ))}
-                    </div>
-                </main>
             </main>
+            <div className="relative flex mt-12 h-[500px] w-full flex-row items-center justify-center overflow-hidden">
+                <Marquee reverse vertical className="[--duration:25s]">
+                    {firstRow.map((review) => (
+                        <ReviewCard key={review.username} {...review} />
+                    ))}
+                </Marquee>
+                <Marquee pauseOnHover vertical className="[--duration:30s] ">
+                    {thirdRow.map((review) => (
+                        <ReviewCard key={review.username} {...review} />
+                    ))}
+                </Marquee>
+                <Marquee reverse pauseOnHover vertical className="[--duration:25s] lg:flex flex-col hidden ">
+                    {secondRow.map((review) => (
+                        <ReviewCard key={review.username} {...review} />
+                    ))}
+                </Marquee>
+                <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-background"></div>
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-background"></div>
+            </div>
         </section>
-    )
+    );
 }
-
-export default Reviews

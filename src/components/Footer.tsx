@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import logo from "@/assets/logo.png"
-import {Instagram,Linkedin,Twitter} from "lucide-react";
 
 const Footer = () => {
     return (
@@ -14,26 +13,21 @@ const Footer = () => {
                         <h1 className='font-bold font-noto-head text-xl'>AdsFast</h1>
                     </Link>
                     <p className="text-sm text-neutral-600 ">Generate high-converting ads in seconds</p>
-                    <div className="flex  gap-4">
-                        <Linkedin className="p-1.5 hover:bg-gray-200 rounded-md h-8 w-8" />
-                        <Twitter className="p-1.5 hover:bg-gray-200 rounded-md h-8 w-8" />
-                        <Instagram className="p-1.5 hover:bg-gray-200 rounded-md h-8 w-8" />
-                    </div>
-                    <p>Made by <Link href={"/"} className="tag">Anas_bd</Link> </p>
+                    <p className="mt-4">Made by <Link href={"/https://x.com/Anas_bd01"} className="tag">Anas_bd</Link> </p>
 
                 </div>
                 <nav className="flex flex-col">
                     <h6 className="font-semibold tracking-wide mb-4 text-lg text-neutral-900">Links</h6>
-                    <a className="link link-hover">Login</a>
-                    <a className="link link-hover">Support</a>
-                    <a className="link link-hover">Features</a>
-                    <a className="link link-hover">Reviews</a>
-                    <a className="link link-hover">Pricing</a>
+                    <Link href={"/login"} className="link link-hover">Login</Link>
+                    <Link href={"/support"} className="link link-hover">Support</Link>
+                    <Link href={"#features"} className="link link-hover">Features</Link>
+                    <Link href={"#reviews"} className="link link-hover">Reviews</Link>
+                    <Link href={"#pricing"} className="link link-hover">Pricing</Link>
                 </nav>
                 <nav className="flex flex-col">
                     <h6 className="font-semibold tracking-wide mb-4 text-lg text-neutral-900">Legal</h6>
-                    <a className="link link-hover">Terms of use</a>
-                    <a className="link link-hover">Privacy policy</a>
+                    <Link href={"/tos"} className="link link-hover">Terms of use</Link>
+                    <Link href={"/privacy_policy"} className="link link-hover">Privacy policy</Link>
                 </nav>
                 <form>
                     <h6 className="font-semibold tracking-wide mb-4 text-lg text-neutral-900">Newsletter</h6>
@@ -49,7 +43,7 @@ const Footer = () => {
                 </form>
             </footer>
             <hr className="bg-black w-full h-[.5px]" />
-            <p className="text-center sm:text-sm sm:p-4 p-8">Copyright &copy; 2024 - All right reserved by <span className="tag">AdsFast</span></p>
+            <p className="text-center sm:text-sm sm:p-4 p-8">Copyright &copy; 2025 - All right reserved by <span className="tag">AdsFast</span></p>
         </div>
     );
 };
