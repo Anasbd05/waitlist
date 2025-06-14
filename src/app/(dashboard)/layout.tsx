@@ -11,11 +11,11 @@ export default function DashboardLayout({
         <SidebarProvider>
             <AppSidebar />
             <SidebarInset>
-                <div className="w-full justify-between relative flex bg-white items-center gap-2 my-4 px-4">
+                <div className="w-full justify-between relative flex items-center gap-2 mt-4 mb-2 px-4">
                     <SidebarTrigger className="" />
                     <LayoutClient />
                 </div>
-                <main className="flex flex-1 bg-gray-50 flex-col gap-4 p-4 pt-0">
+                <main className="flex flex-1 bg-white flex-col gap-4 px-4">
                     {children}
                 </main>
             </SidebarInset>

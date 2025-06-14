@@ -15,9 +15,9 @@ const Page = async () => {
     }
 
     return (
-        <section className="mt-10 w-[99%] mx-auto">
+        <section className="mt-5 w-[99%] mx-auto">
             <div className="w-full flex items-center justify-between">
-                <h1 className="text-3xl font-semibold mb-6">My Audiences</h1>
+                <h1 className="text-2xl font-semibold mb-6">My Audiences</h1>
             </div>
             <main className="grid grid-cols-1  md:grid-cols-2 xl:grid-cols-3 gap-4 gap-y-6 ">
                 {data.map((audience) => (

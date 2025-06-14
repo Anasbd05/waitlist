@@ -1,7 +1,18 @@
 import {generated_ads} from "@/assets/assets";
+import {createClient} from "@/utils/supabase/server";
 import Image from "next/image";
+import {redirect} from "next/navigation";
 
-export default function GeneratedAds() {
+export default async function GeneratedAds() {
+
+
+  const supabase = await createClient()
+  const {data: {user}} = await supabase.auth.getUser()
+
+  if(!user) {
+    redirect('/login')
+  }
+
   return (
     <section className='mt-10 w-[99%] mx-auto'>
       <h1 className='text-3xl font-semibold mb-6'>My Ads</h1>

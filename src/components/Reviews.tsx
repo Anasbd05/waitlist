@@ -53,7 +53,7 @@ export function Reviews() {
                 </div>
             </main>
             <div className="relative flex mt-12 h-[500px] w-full flex-row items-center justify-center overflow-hidden">
-                <Marquee reverse vertical className="[--duration:25s]">
+                <Marquee reverse pauseOnHover vertical className="[--duration:25s]">
                     {firstRow.map((review) => (
                         <ReviewCard key={review.username} {...review} />
                     ))}

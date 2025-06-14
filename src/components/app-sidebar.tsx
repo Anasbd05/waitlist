@@ -19,11 +19,11 @@ import Image from "next/image"
 export async function AppSidebar({...props}: React.ComponentProps<typeof Sidebar>) {
 
   const supabase = createClient()
-  const {data: {session}} = await supabase.auth.getSession()
+  const {data: {user}} = await supabase.auth.getUser()
 
   const userr = {
-    name: session?.user?.user_metadata.name,
-    email: session?.user?.email ?? "",
+    name: user?.user_metadata.name,
+    email: user?.email ?? "",
   }
 
   return (
