@@ -156,7 +156,7 @@ export const examples = [
 
 export const pricingPlans = [
   {
-    title: "Basic",
+    title: "Starter",
     price: 14,
     billing : "/month" ,
     features: [
@@ -165,6 +165,7 @@ export const pricingPlans = [
       "Includes all features",
       "Edit & save ads anytime"
     ],
+    variant_id : "851037" 
   },
   {
     title: "Pro",
@@ -178,9 +179,10 @@ export const pricingPlans = [
       "Includes all features",
       "Priority updates" ,
     ],
+    variant_id : "851039"
   },
   {
-    title: "Beast",
+    title: "Core",
     price: 149,
     features: [
       "Unlimited ad generation",
@@ -189,7 +191,8 @@ export const pricingPlans = [
       "Includes all features",
       "Lifetime access & updates"
     ],
-    bonus :"Pay once , Use forever"
+    bonus :"Pay once , Use forever",
+    variant_id : "851041"
   },
 ];
 
