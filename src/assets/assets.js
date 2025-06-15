@@ -6,9 +6,6 @@ import social from "./social.png"
 import i1 from "./01.jpg"
 import i2 from "./2.jpg"
 import i3 from "./3.jpg"
-import i4 from "./4.jpg"
-import i5 from "./5.jpg"
-import i6 from "./6.jpg"
 
 
 import gen1 from "./gen1.jpg"
@@ -141,17 +138,9 @@ export const examples = [
     alt : "Special offer for selling shoes ads"
   },
   {
-    image :i4 ,
+    image :gen3 ,
     alt : "digital marketing agency ads"
-  },
-  {
-    image :i5 ,
-    alt : "sky blue modern digital marketing ads"
-  },
-  {
-    image :i6 ,
-    alt : "black && green modern digital marketing ads"
-  },
+  }
 ]
 
 export const pricingPlans = [
@@ -168,6 +157,19 @@ export const pricingPlans = [
     variant_id : "851037" 
   },
   {
+    title: "Core",
+    price: 149,
+    features: [
+      "Unlimited ad generation",
+      "AI copy + visuals",
+      "Edit & save ads anytime",
+      "Includes all features",
+      "Lifetime access & updates"
+    ],
+    bonus :"Pay once , Use forever",
+    variant_id : "851041"
+  },
+  {
     title: "Pro",
     price: 120,
     billing : "/year" ,
@@ -180,19 +182,6 @@ export const pricingPlans = [
       "Priority updates" ,
     ],
     variant_id : "851039"
-  },
-  {
-    title: "Core",
-    price: 149,
-    features: [
-      "Unlimited ad generation",
-      "AI copy + visuals",
-      "Edit & save ads anytime",
-      "Includes all features",
-      "Lifetime access & updates"
-    ],
-    bonus :"Pay once , Use forever",
-    variant_id : "851041"
   },
 ];
 

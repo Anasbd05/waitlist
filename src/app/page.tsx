@@ -1,3 +1,4 @@
+import Examples from '@/components/Examples'
 import Faqs from '@/components/Faqs'
 import Features from '@/components/Features'
 import Footer from '@/components/Footer'
@@ -20,6 +21,7 @@ const page = async () => {
       <Hero />
       <Tricker />
       <Features />
+      <Examples />
       <Reviews />
       <Pricing />
       <Faqs />
