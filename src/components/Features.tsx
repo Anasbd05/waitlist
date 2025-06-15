@@ -5,8 +5,8 @@ import Image from 'next/image'
 const Features = () => {
     return (
         <section id='features' className=' py-8  lg:py-14 bg-accent/70'>
-            <main className=' lg:w-11/12 px-5 md:px-10 lg:px-0 ml-auto  flex  justify-center flex-col lg:flex-row  gap-10 items-center'>
-                <div className="flex flex-col lg:w-2/4">
+            <main className=' lg:w-11/12 sm:px-5 md:px-10 lg:px-0 ml-auto  flex  justify-center flex-col lg:flex-row  gap-10 items-center'>
+                <div className="flex px-4 flex-col lg:w-2/4">
                     <h1 className=' text-4xl md:text-5xl lg:text-[65px] tag mb-8'>Why choose Ads fast?</h1>
                     <p className='mb-4 lg:mb-10  text-lg'>Tired of wasting hours on ads that don’t convert? Our AI tool instantly creates scroll-stopping
                         ad copy and visuals for any platform — no design or writing skills needed. Save time,

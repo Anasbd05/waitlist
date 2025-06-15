@@ -48,11 +48,11 @@ export function Reviews() {
         <section id='reviews' className='py-10 md:py-12  lg:py-16'>
             <main className='w-full sm:w-11/12 mx-auto'>
                 <div className="flex items-center flex-col">
-                    <h1 className='tag text-4xl md:text-5xl lg:text-[65px]'>Reviews</h1>
-                    <p className='mt-2 text-lg text-neutral-700'>What are people saying about us?</p>
+                    <h1 className='tag font-header text-lg mb-2'>Reviews</h1>
+                    <p className='font-bold text-3xl lg:text-5xl tracking-tight font-header'>What are people saying about us?</p>
                 </div>
             </main>
-            <div className="relative flex mt-12 h-[500px] w-full flex-row items-center justify-center overflow-hidden">
+            <div className="relative flex mt-20 h-[700px] w-full flex-row items-center justify-center overflow-hidden">
                 <Marquee reverse pauseOnHover vertical className="[--duration:25s]">
                     {firstRow.map((review) => (
                         <ReviewCard key={review.username} {...review} />
