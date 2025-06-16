@@ -45,7 +45,7 @@ const ReviewCard = ({
 
 export function Reviews() {
     return (
-        <section id='reviews' className='py-10 md:py-12  lg:py-16'>
+        <section id='reviews' className='py-10 md:py-16 px-4 lg:py-20'>
             <main className='w-full sm:w-11/12 mx-auto'>
                 <div className="flex items-center flex-col">
                     <h1 className='tag font-header text-lg mb-2'>Reviews</h1>

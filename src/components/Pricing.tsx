@@ -7,7 +7,7 @@ const Pricing = () => {
 
 
     return (
-        <section id='pricing' className='py-14 w-11/12 mx-auto'>
+        <section id='pricing' className='py-14 lg:py-20 w-11/12 mx-auto'>
             <div className="flex items-center flex-col">
                 <h1 className='tag font-header text-lg mb-2'>Pricing</h1>
                 <p className='font-bold text-3xl lg:text-5xl tracking-tight font-header '>Generate Ads fast, with less effort.</p>

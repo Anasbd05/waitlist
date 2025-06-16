@@ -6,6 +6,7 @@ import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
 import Pricing from '@/components/Pricing'
 import {Reviews} from '@/components/Reviews'
+import Show from '@/components/Show'
 import Tricker from '@/components/Tricker'
 import React from 'react'
 
@@ -17,13 +18,16 @@ const page = async () => {
 
   return (
     <div>
-      <Navbar />
-      <Hero />
+      <div className='bg-gradient-to-bl from-white to-indigo-200'>
+        <Navbar />
+        <Hero />
+      </div>
       <Tricker />
       <Features />
       <Examples />
-      <Reviews />
+      <Show />
       <Pricing />
+      <Reviews />
       <Faqs />
       <Footer />
 

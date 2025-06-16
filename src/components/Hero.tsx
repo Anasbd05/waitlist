@@ -9,7 +9,7 @@ const Hero = () => {
 
 
     return (
-        <section className='py-10 md:py-12 flex flex-col items-center lg:py-14'>
+        <section className='py-10 md:py-12  flex flex-col items-center lg:py-18'>
             <main className='w-11/12 mx-auto flex flex-col lg:flex-row justify-center lg:justify-between items-center'>
                 <div className="flex flex-col items-center lg:items-start lg:w-2/4">
                     <div className="flex text-black ring mb-4 ring-purple-500 bg-gradient-to-b px-14 from-purple-400 to-accent justify-center items-center gap-8 py-1 rounded-full">

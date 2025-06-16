@@ -40,7 +40,7 @@ const Page = () => {
 
 
     return (
-        <section className='mt-10 w-11/12 mx-auto'>
+        <section className="mt-5 w-[99%] mx-auto">
             <h1 className='text-3xl mb-6 font-semibold'>Create Ad</h1>
             <main className='flex flex-col w-full items-center gap-y-10'>
                 <div className="flex bg-white lg:w-2/4 shadow-sm rounded-lg px-4 pt-8 flex-col gap-6">

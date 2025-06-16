@@ -3,7 +3,7 @@ import React from 'react'
 
 const Faqs = () => {
     return (
-        <section id='faqs' className=' bg-gray-100 py-10 md:py-12 lg:py-16'>
+        <section id='faqs' className=' py-14  bg-gradient-to-b from-white to-[#D2DCFF]  md:py-16 lg:py-20'>
             <main className="flex flex-col w-11/12 mx-auto gap-10 md:flex-row">
                 <div className="flex flex-col items-center lg:items-start lg:w-2/4   gap-3">
                     <h1 className="text-xl tag">FAQS</h1>
