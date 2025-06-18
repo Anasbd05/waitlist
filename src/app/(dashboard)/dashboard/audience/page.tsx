@@ -11,7 +11,8 @@ const Page = async () => {
         .select('*')
 
     if(!data || data.length === 0) {
-        return <p>No audiences found.</p>
+        return <h1 className="text-2xl font-semibold mb-6">My Audiences</h1>
+
     }
 
     return (

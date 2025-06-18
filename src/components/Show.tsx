@@ -7,7 +7,6 @@ const Show = () => {
         <section className='bg-gradient-to-b from-white to-indigo-200'>
             <section className='py-14 md:py-16 lg:py-20 w-11/12 mx-auto'>
                 <div className="flex items-center flex-col">
-                    <span className='text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight mb-4'>Boost your productivity</span>
                     <h1 className='tag font-header text-lg mb-4'>Effortless Ads</h1>
                     <p className='font-bold text-3xl lg:text-4xl tracking-tight font-header'>
                         A More Effective Way to Generate Ads

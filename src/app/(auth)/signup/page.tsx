@@ -1,8 +1,9 @@
 import {SignupForm} from "@/components/SignUp-form"
 import logo from "@/assets/logo.ico"
-import loginpic from "@/assets/loginpic.png"
 import Image from "next/image"
 import Link from "next/link"
+import loginImage from "@/assets/login.png"
+
 
 export default function SignupPage({
     searchParams,
@@ -29,12 +30,14 @@ export default function SignupPage({
                     </div>
                 </div>
             </div>
-            <div className="bg-muted relative hidden lg:block">
+            <div className="bg-accent rounded-l-2xl relative hidden lg:block">
                 <Image
+                    draggable="false"
+                    loading="lazy"
                     fill
-                    src={loginpic}
+                    src={loginImage}
                     alt="Login image"
-                    className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
+                    className="absolute p-2 rounded-2xl inset-0 h-full w-full"
                 />
             </div>
         </div>

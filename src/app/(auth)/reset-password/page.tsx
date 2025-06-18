@@ -8,7 +8,7 @@ import {Label} from "@/components/ui/label"
 import Image from 'next/image'
 import logo from "@/assets/logo.ico"
 import Link from 'next/link'
-import loginpic from "@/assets/loginpic.png"
+import loginImage from "@/assets/login.png"
 
 const page = ({
     className,
@@ -105,12 +105,14 @@ const page = ({
                     </div>
                 </div>
             </div>
-            <div className="bg-muted relative hidden lg:block">
+            <div className="bg-primary rounded-l-2xl relative hidden lg:block">
                 <Image
+                    draggable="false"
+                    loading="lazy"
                     fill
-                    src={loginpic}
-                    alt="login Image"
-                    className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
+                    src={loginImage}
+                    alt="Login image"
+                    className="absolute p-2 rounded-2xl inset-0 h-full w-full"
                 />
             </div>
         </div>

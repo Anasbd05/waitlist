@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import {createClient} from "@/utils/supabase/server"
 import {redirect} from "next/navigation"
+import loginImage from "@/assets/login.png"
 
 export default async function LoginPage() {
 
@@ -32,7 +33,16 @@ export default async function LoginPage() {
                     </div>
                 </div>
             </div>
-            <div className="bg-gradient-to-b from-black to-accent h-full w-full hidden lg:block" />
+            <div className="bg-primary rounded-l-2xl relative hidden lg:block">
+                <Image
+                    draggable="false"
+                    loading="lazy"
+                    fill
+                    src={loginImage}
+                    alt="Login image"
+                    className="absolute p-2 rounded-2xl inset-0 h-full w-full"
+                />
+            </div>
         </div>
     )
 }
