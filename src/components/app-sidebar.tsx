@@ -53,7 +53,7 @@ export async function AppSidebar(props: React.ComponentProps<typeof Sidebar>) {
             <Image src={logo} alt="logo image" className="h-6 w-6" />
           </div>
           <div className="grid flex-1 text-left text-sm leading-tight">
-            <span className="truncate font-medium">AdsFast</span>
+            <span className="truncate font-medium">RankyAds</span>
             <span className="truncate text-xs">
               {currentPlan}
             </span>

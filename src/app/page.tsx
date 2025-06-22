@@ -18,10 +18,8 @@ const page = async () => {
 
   return (
     <div>
-      <div className='bg-gradient-to-bl from-white to-indigo-200'>
-        <Navbar />
-        <Hero />
-      </div>
+      <Navbar />
+      <Hero />
       <Tricker />
       <Features />
       <Examples />

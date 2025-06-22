@@ -40,7 +40,7 @@ export default function Examples() {
     const images = [i1,i2,i3,gen3,i1,i2,i3,gen3];
 
     return (
-        <section className="py-14 md:py-18 xl:py-24">
+        <section className="py-14 md:py-18 bg-white xl:py-24">
             <div className="flex items-center flex-col">
                 <h1 className="tag font-header text-lg mb-2">Examples</h1>
                 <p className="font-bold text-3xl lg:text-5xl tracking-tight font-header">

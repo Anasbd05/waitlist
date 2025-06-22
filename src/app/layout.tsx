@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body cz-shortcut-listen="true"
-        className={`${inter.className} ${noto.variable} text-black antialiased`}
+        className={`${inter.className} bg-gradient-to-bl from-white to-indigo-200 ${noto.variable} text-black antialiased`}
       >
         {children}
       </body>

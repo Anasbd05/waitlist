@@ -10,10 +10,10 @@ const Navbar = async () => {
     const {data: {user}} = await supabase.auth.getUser()
 
     return (
-        <section className='py-4 px-4 rounded-xl top-4 w-11/12 mx-auto lg:px-14 flex justify-between items-center sticky z-50 shadow-md border-gray-400 bg-white'>
+        <section className='py-4 px-4 rounded-xl w-11/12 mx-auto lg:px-14 flex justify-between top-4 items-center sticky z-50 shadow-md border-gray-400 bg-white'>
             <Link href={"/"} className='flex gap-0.5 items-center'>
                 <Image src={logo} alt='Ads fast logo' width={45} height={45} />
-                <h1 className='font-bold font-noto-head text-xl'>AdsFast</h1>
+                <h1 className='font-bold font-noto-head text-xl'>RankyAds</h1>
             </Link>
             <div className="lg:flex items-center gap-6 hidden">
                 <Link className='hover:underline decoration-primary underline-offset-4 ' href={"#features"}>Features</Link>
