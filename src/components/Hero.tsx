@@ -2,19 +2,15 @@ import React from 'react'
 import {BrainCircuit} from 'lucide-react'
 
 const Hero = () => {
-
-
-
-
     return (
-        <section className='py-10 md:py-12  flex flex-col items-center lg:py-18'>
+        <section className='py-10 md:py-12 h-screen justify-center flex flex-col items-center lg:py-18'>
             <main className='w-11/12 mx-auto flex flex-col justify-center items-center'>
                 <div className="flex flex-col items-center">
-                    <div className="flex text-black ring mb-4 ring-purple-500 bg-gradient-to-b px-14 from-purple-400 to-accent justify-center items-center gap-8 py-1 rounded-full">
+                    <div className="flex text-black ring mb-8 -mt-4 ring-purple-500 bg-gradient-to-b px-14 from-purple-400 to-accent justify-center items-center gap-8 py-1 rounded-full">
                         <BrainCircuit className='h-5 w-5' />
                         <span>The AI ads generator</span>
                     </div>
-                    <h1 className='text-4xl md:text-5xl xl:text-6xl py-2 tag '>Fast, high-performing ads</h1>
+                    <h1 className='text-4xl md:text-5xl xl:text-6xl py-2 tag text-center '>Fast, high-performing ads</h1>
                     <p className=' text-center max-w-xl lg:max-w-2xl lg:leading-relaxed mt-6'>Generate high-converting ads for any social media platform in seconds with
                         AI-powered copy and visuals. Just enter your product or service — no writing
                         or design skills needed.
