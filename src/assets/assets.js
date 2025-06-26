@@ -220,38 +220,28 @@ export const generated_ads = [
     id: 1,
     image: gen1,
     alt: "Ad Image",
-    title: "Room Glow",
-    desc: "RGB lights to instantly upgrade your space."
   },
 
   {
     id: 2,
     image: gen2,
     alt: "Ad Image",
-    title: "Posture Fix",
-    desc: "Relieve back pain and improve your posture fast."
   },
 
   {
     id: 3,
     image: gen3,
     alt: "Ad Image",
-    title: "Flower Light",
-    desc: "A fun glowing gift everyone will love."
   },
 
   {    id: 4,
     image: gen4,
     alt: "Ad Image",
-    title: "Desk Boost",
-    desc: "Sleek LED stand that elevates your setup."
   },
    {
     id: 5,
     image: gen3,
     alt: "Ad Image",
-    title: "Flower Light",
-    desc: "A fun glowing gift everyone will love."
   },
 ]
 

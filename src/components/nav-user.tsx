@@ -4,7 +4,6 @@ import {
   ChevronsUpDown,
   CreditCard,
   LogOut,
-  Settings,
 } from "lucide-react"
 
 import {
@@ -95,12 +94,6 @@ export function NavUser({
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuGroup>
-              <Link href={"/settings"} className="w-full cursor-pointer">
-                <DropdownMenuItem>
-                  <Settings />
-                  Settings
-                </DropdownMenuItem>
-              </Link>
               <Link href={"/billing"} className="w-full cursor-pointer">
                 <DropdownMenuItem>
                   <CreditCard />
