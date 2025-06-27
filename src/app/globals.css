@@ -12,7 +12,7 @@
 
 @theme inline {
   --font-header: var(--font-noto-head);
-  --color-primary: #7ed0ff;
+  --color-primary: #9f2d00;
   --color-accent: #d9acfd;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);

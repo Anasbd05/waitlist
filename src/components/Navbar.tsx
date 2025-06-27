@@ -16,10 +16,10 @@ const Navbar = async () => {
                 <h1 className='font-bold font-noto-head text-xl'>RankyAds</h1>
             </Link>
             <div className="lg:flex items-center gap-6 hidden">
-                <Link className='hover:underline decoration-primary underline-offset-4 ' href={"#features"}>Features</Link>
-                <Link className='hover:underline decoration-primary underline-offset-4 ' href={"#reviews"}>Testimonials</Link>
-                <Link className='hover:underline decoration-primary underline-offset-4 ' href={"#pricing"}>Pricing</Link>
-                <Link className='hover:underline decoration-primary underline-offset-4 ' href={"#faqs"}>Faqs</Link>
+                <Link className='hover:text-primary font-medium ' href={"#features"}>Features</Link>
+                <Link className='hover:text-primary font-medium ' href={"#reviews"}>Testimonials</Link>
+                <Link className='hover:text-primary font-medium ' href={"#pricing"}>Pricing</Link>
+                <Link className='hover:text-primary font-medium ' href={"#faqs"}>Faqs</Link>
             </div>
             {user ? <Link href={"/dashboard"}
                 className='py-2 px-5 rounded-lg hover:opacity-80 bg-black hidden md:block cursor-pointer text-white' >
