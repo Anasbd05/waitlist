@@ -25,7 +25,7 @@ const Page = async () => {
                     <div className='flex gap-3 p-5 items-start border rounded-lg' key={audience.id}>
                         <Image className='rounded-full' alt='' src={userpic} width={50} height={50} />
                         <div className="flex flex-col gap-0.5">
-                            <h2 className="font-medium">{audience.name}</h2>
+                            <h2 className="font-medium text-lg">{audience.name}</h2>
                             <p className='text-muted-foreground text-sm '>{audience.description}</p>
                         </div>
                     </div>

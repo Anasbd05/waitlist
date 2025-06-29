@@ -13,11 +13,13 @@ import {
 import {Input} from "@/components/ui/input"
 import {Label} from "@/components/ui/label"
 import {supabase} from "@/utils/supabase/client"
+import {Loader} from "lucide-react"
 import {useState} from "react"
 
 export function AddAudience() {
     const [targetName,setTargetName] = useState('')
     const [targetDesc,setTargetDesc] = useState('')
+    const [loading,setLoading] = useState(false)
 
 
     const add = async (e: React.FormEvent) => {
@@ -31,6 +33,7 @@ export function AddAudience() {
         }
 
         try {
+            setLoading(true)
             const {error} = await supabase
                 .from('audiences')
                 .insert({
@@ -41,13 +44,15 @@ export function AddAudience() {
 
             if(error) {
                 console.log(error);
-            } else {
-                console.log("audience created successfully");
-                setTargetName("");
-                setTargetDesc("");
             }
         } catch(error) {
             console.log(error);
+        }
+        finally {
+            console.log("audience created successfully");
+            setTargetName("");
+            setTargetDesc("");
+            setLoading(false)
         }
     };
 
@@ -95,7 +100,9 @@ export function AddAudience() {
                             </Button>
                         </DialogClose>
                         <Button onClick={add} className="cursor-pointer hover:opacity-80">
-                            Save Audience
+                            {
+                                loading ? <Loader className="h-4 w-4 animate-spin" /> : "Save Audience"
+                            }
                         </Button>
                     </DialogFooter>
                 </DialogContent>
