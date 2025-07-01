@@ -14,12 +14,14 @@ import {Input} from "@/components/ui/input"
 import {Label} from "@/components/ui/label"
 import {supabase} from "@/utils/supabase/client"
 import {Loader} from "lucide-react"
+import {useRouter} from "next/navigation"
 import {useState} from "react"
 
 export function AddAudience() {
     const [targetName,setTargetName] = useState('')
     const [targetDesc,setTargetDesc] = useState('')
     const [loading,setLoading] = useState(false)
+    const router = useRouter()
 
 
     const add = async (e: React.FormEvent) => {
@@ -49,10 +51,10 @@ export function AddAudience() {
             console.log(error);
         }
         finally {
-            console.log("audience created successfully");
             setTargetName("");
             setTargetDesc("");
             setLoading(false)
+            router.push('/dashboard/audience')
         }
     };
 
